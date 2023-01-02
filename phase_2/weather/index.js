@@ -7,6 +7,7 @@ let weatherData = null;
 
 get(apiUrl, (body) => {
   weatherData = JSON.parse(body);
+  console.log(weatherData);
   console.log(weatherData.main.temp);
   console.log(weatherData.weather[0].main);
 });
